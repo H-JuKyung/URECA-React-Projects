@@ -1,0 +1,11 @@
+.logo {
+  width: 200px;
+}
+
+path {
+  transition: 0.3s;
+}
+
+.logo:hover path {
+  fill: var(--light-colors-dark-gray-light);
+}
