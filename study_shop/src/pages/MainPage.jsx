@@ -4,7 +4,7 @@ import HeroSlider from '../organism/HeroSlider'
 const MainPage = () => {
   return (
     <main>
-      <h2>MainPage</h2>
+      <h2 hidden>MainPage</h2>
       <HeroSlider />
     </main>
   )
