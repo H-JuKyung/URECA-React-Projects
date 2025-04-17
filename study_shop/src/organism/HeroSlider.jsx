@@ -21,6 +21,7 @@ const HeroSlider = () => {
 
         await delay(3000) // 스켈레톤 UI 확인을 위한 3초 지연
 
+        console.log('data----', data)
         setBanner(data)
         setLoading(false)
       } catch (err) {
