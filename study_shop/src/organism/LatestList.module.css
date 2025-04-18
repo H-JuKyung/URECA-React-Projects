@@ -1,0 +1,58 @@
+.listCon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--fs33);
+}
+
+.moreList {
+  font-size: var(--fs16);
+  transition: color 0.3s;
+}
+
+.moreList:hover {
+  color: var(--dark-colors-accent-dark);
+  font-weight: bold;
+}
+
+.moreList::after {
+  content: '\f138';
+  font-family: 'bootstrap-icons';
+  align-items: center;
+  position: relative;
+  transform: translateX(0);
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.moreList:hover::after {
+  transform: translateX(5px);
+}
+
+.select {
+  width: 100%;
+  padding-right: var(--fs8);
+}
+
+.select > select {
+  font-size: var(--fs16);
+  padding: 0 var(--fs8);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: white;
+  margin-left: var(--fs8);
+}
+
+.list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: var(--fs20);
+}
+
+@media (max-width: 600px) {
+  .list {
+    grid-template-columns: repeat(auto-fill, 1fr);
+  }
+}
